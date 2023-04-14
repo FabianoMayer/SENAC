@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IMC</title>
+    <script src="calc.js"></script>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="fundo_calc">
+      <h1>Calculadora IMC</h1>
+      <div id="inputs">
+        <label for="alt">Digite a sua altura:</label><br /><br />
+        <input type="number" id="alt" name="alt" /> <br /><br />
+        <label for="peso">Digite o seu peso:</label> <br /><br />
+        <input type="number" id="peso" name="peso" /> <br /><br />
+        <label for="valimc1"></label>
+        <div id="valimc2">
+          <h1></h1>
+          <div id="calc-btn">
+          <button id="calc-btn">Calcular</button>
+        </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      // Adiciona um evento de clique ao botão de "Calcular"
+      document.getElementById("calc-btn").addEventListener("click", Calc_IMC);
+    </script>
+  </body>
+</html>
