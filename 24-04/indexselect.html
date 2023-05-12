@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Formulário em HTML</h1>
+    <form>
+        <select id="texto">
+            <option value="1">Um</option>
+            <option value="2">Dois</option>
+            <option value="3">Três</option>  
+        </select>   
+        <br> </br>
+        <button type="button" onclick="myFunction()">Enviar</button>
+        <p id="mostra"></p>
+        </form>
+    <script>
+        function myFunction() {
+            let texto= document.getElementById("texto").value;
+            document.getElementById("mostra").innerHTML= texto;
+        }
+    </script>
+</body>
+</html>

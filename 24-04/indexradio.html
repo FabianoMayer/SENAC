@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Formulário em HTML</h1>
+    <form>
+        <input type="radio" id="texto" name="texto" value="F">
+        <label for="feminino">Feminino</label> <br>
+        <input type="radio" id="texto" name="texto" value="M">
+        <label for="masculino">masculino</label> <br> 
+        <br> </br>
+        <button type="button" onclick="myFunction()">Enviar</button>
+        <p id="mostra"></p>
+        </form>
+    <script>
+        function myFunction() {
+            let texto= document.querySelector('input[name="texto"]:checked').value;
+            document.getElementById("mostra").innerHTML= texto;
+        }
+    </script>
+</body>
+</html>
