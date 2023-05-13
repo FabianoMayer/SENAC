@@ -1,0 +1,11 @@
+body {
+    background-color: #a0a0a0;
+    color: white;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: #048585 !important;
+    
+}
+
+
